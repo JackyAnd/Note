@@ -1,0 +1,6 @@
+要查看依赖树（Gradle 解决依赖的方式），我们可以打开 Android Studio 的终端，然后输入以下命令（Windows）：
+
+gradlew app:dependencies
+mac:
+
+./gradlew app:dependencies
