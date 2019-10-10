@@ -1,0 +1,151 @@
+1. 文件存放位置
+    >> ../site/v网站英文名_网站中文名/类型/文件
+    >> ../site/s网站英文名_网站中文名/类型/文件
+    v：v开头，存放视频文件
+    s：s开头，存放故事文件
+
+2. 类型名称
+    >> v网站英文名_网站中文名_类型
+    >> s网站英文名_网站中文名_类型
+
+3. 对应数据库的路径
+    >> ../site/v网站英文名_网站中文名/v网站英文名.db (t_video)
+    >> ../site/s网站英文名_网站中文名/s网站英文名.db (t_story)
+
+    t_story (sy_id, sy_type, sy_name, md_time)
+    t_video (sy_id, sy_type, sy_name, md_time)
+
+4. 记录信息
+    ../site/story.db (t_db, t_record)
+    ../site/video.db (t_db, t_record, t_video)
+
+    t_db     (db_id, db_path)
+    t_record (db_id, sy_id, sy_name, md_time, cl_time)
+    t_video  ()
+
+
+
+5.  是否已读 >> t_story
+    ../site/s网站英文名_网站中文名/s网站英文名.db (t_story -> md_time)
+    ../site/story.db (t_record -> md_time)
+
+6.  是否保存
+    ../site/s网站英文名_网站中文名/s网站英文名.db (t_video -> md_time)
+    ../site/video.db (t_record -> md_time)
+
+
+7. 长篇（如：小说）（目录）s000_长篇
+        小说，军事（目录）
+            书名（目录）
+                各章节（文件）
+
+
+        数据库：// t_story  (sy_type:s000_长篇_小说，bk_name:书名, sy_name:文件名称(即各章节名称)，md_time, sy_id)
+                t_book  (bk_id, bk_name, sy_type, md_time) // 当所有的章节均看完之后，md_time才能有值 (sy_time, bk_name) 唯一
+                t_story (sy_id, bk_id, sy_name, md_time) (bk_id, sy_name) 唯一
+
+
+7. 故事网站
+----------------------------------------------------------------------------------------------------
+00.英语报刊网站
+http://www.tingclass.net/zt/baokan/
+
+01.鸠摩搜书
+
+http://t.cn/RGOhPbJ
+
+中文书籍搜索，网站大部分的书籍都能搜到，除了一些刚刚出版的。
+
+02.Library Genesis
+
+http://t.cn/aK72BZ
+
+外文书籍搜索，只要是外文书籍基本上都可以搜到并下载。
+
+中文网站
+
+01.台大图书馆
+
+http://t.cn/RyhxPWE
+
+台湾大学图书馆，目前有245088本书籍，内外公开取用电子书资源，类型包括一般书籍、研究报告、学位论文、会议论文集。
+
+02.书格
+
+http://t.cn/R7nGV2O
+
+最好的古籍站点；致力于开放式分享、介绍公共版权领域的古籍善本数字资源 。
+
+03.图灵社区
+
+http://t.cn/Sqtvbk
+
+提供kindle书籍下载。
+
+04.ePUBee 书库
+
+http://t.cn/RV7t6G1
+
+号称最大的电子书库，对外开放，免费使用。
+
+05.七彩英语
+
+http://www.qcenglish.com/
+
+2249本英文原版电子书，支持下载。
+
+06.苦瓜书盘
+
+https://kgbook.com/
+
+一个提供电子书分享的平台。供网友交流适合电纸书阅读的6寸pdf及mobi格式电子书制作技术的网站。
+
+英文网站
+
+01.ManyBooks
+
+http://t.cn/zWaouM8
+
+收集了超过32000免费电子书。
+
+02.BookSC
+
+http://t.cn/RhlOfVg
+
+收录了339万本书籍及5242万个文献。
+
+03.MetPublications
+
+http://t.cn/R8RU7uA
+
+下载艺术、历史类书籍。
+
+04.Forgotten Books
+
+http://t.cn/R5JaFY1
+
+拥有1039665册书籍的在线图书馆，收录无版权书籍，无限制在线阅读，下载PDF需要注册登录。
+
+05.Project Gutenberg
+
+http://t.cn/hejhQ
+
+著名的公版书电子化计划，目前收藏的电子书数量超过5万册，均可免费合法下载。
+
+06.Online Books
+
+http://t.cn/RO7u1KJ
+
+由宾夕法尼亚大学图书馆托管，目前有200多万本免费书籍，并且在不断更新，无需注册，可直接下载。
+
+07.SaltTiger
+
+http://t.cn/RhXDxgH
+
+计算机类电子书，提供Mobi、PDF、Epub格式下载。
+
+08.PDF Drive
+
+http://t.cn/RzcfAwk
+
+----------------------------------------------------------------------------------------------------
