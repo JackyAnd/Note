@@ -3,3 +3,13 @@
   a. 进入简介界面时，整个界面会闪一下，目前不知道闪烁的原因；
   b. 在播放视频时，上下滑动，播放的视频会滑出界；(在滑动时，暂停播放)
   c. 避免以上两个问题，不使用ListView播放视频列表；
+
+
+  //        压缩一下文件
+  //        String now = System.currentTimeMillis() + ".zip";
+  //        String encPath = DIR_PROJECT + "video_base_enc_" + now;
+  //        String decPath = DIR_PROJECT + "video_base_dec_" + now;
+  //        DesCtrl.encryptFile("9Un8$d0A", DIR_PROJECT + "video_base.zip", encPath);
+  //        Log.d(TAG, "加密完成 >> enc=" + encPath);
+  //        DesCtrl.decryptFile("9Un8$d0A", encPath, decPath);
+  //        Log.d(TAG, "解密完成 >> dec=" + decPath);
