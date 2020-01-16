@@ -12,5 +12,4 @@
   //        DesCtrl.encryptFile("9Un8$d0A", DIR_PROJECT + "video_base.zip", encPath);
   //        Log.d(TAG, "加密完成 >> enc=" + encPath);
   //        DesCtrl.decryptFile("9Un8$d0A", encPath, decPath);
-  //        Log.d(TAG, "解密完成 >> dec=" + decPath);
-
+  //        Log.d(TAG, "解密完成 >> dec=" + dec���)t�&

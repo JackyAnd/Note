@@ -3,4 +3,4 @@
 gradlew app:dependencies
 mac:
 
-./gradlew app:dependencies
+./gradlew appŠÜŞú¿7ù
